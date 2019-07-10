@@ -262,6 +262,22 @@ app.get("/scienceTextBooks/physics", (req, res) => {
   res.render('scienceTextBooks/physics',{title:"science"});
 });
 
+app.get("/languageTextBooks/french", (req, res) => {
+  res.render('languageTextBooks/french',{title:"language"});
+});
+
+app.get("/languageTextBooks/spanish", (req, res) => {
+  res.render('languageTextBooks/spanish',{title:"language"});
+});
+
+app.get("/languageTextBooks/latin", (req, res) => {
+  res.render('languageTextBooks/latin',{title:"language"});
+});
+
+app.get("/languageTextBooks/mandarin", (req, res) => {
+  res.render('languageTextBooks/mandarin',{title:"language"});
+});
+
 // myform demo ...
 
 app.get('/myform', function(req, res, next) {

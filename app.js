@@ -24,6 +24,7 @@ db.once('open', function() {
 const commentController = require('./controllers/commentController')
 const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
+const noteController = require('./controllers/noteController')
 const quiz2Controller = require('./controllers/quiz2Controller')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
@@ -66,7 +67,7 @@ const approvedLogins = ["tjhickey724@gmail.com","csjbs2018@gmail.com"];
 
 // here is where we check on their logged in status
 app.use((req,res,next) => {
-  res.locals.title="YellowCartwheel"
+  res.locals.title="BootLeg"
   res.locals.loggedIn = false
   if (req.isAuthenticated()){
       console.log("user has been Authenticated")
@@ -162,7 +163,7 @@ app.use(function(req,res,next){
 
 
 app.get('/', function(req, res, next) {
-  res.render('index',{title:"YellowCartwheel"});
+  res.render('index',{title:"BootLeg"});
 });
 
 app.get('/quiz2',quiz2Controller.getAllMovieRatings)
@@ -200,8 +201,13 @@ app.get('/bmidemo', (req, res) => {
 app.get('/myform', function(req, res, next) {
   res.render('myform',{title:"Form Demo"});
 });
+app.get('/noteform', function(req, res, next) {
+  res.render('noteform',{title:"Note Demo"});
+});
 
 app.post('/processform', commentController.saveComment)
+app.post('/processnote', noteController.saveNote)
+
 
 app.get('/showComments', commentController.getAllComments)
 // app.use('/', indexRouter);  // this is how we use a router to handle the / path

@@ -8,8 +8,8 @@ exports.saveNote = ( req, res ) => {
    {
      header: req.body.String,
      text: req.body.String,
-     postdate: req.body.Date,
-     commentcount: req.body.Number,
+     //postdate: req.body.Date,
+     //commentcount: req.body.Number,
      textbook: req.body.String,
    }
   )
@@ -34,7 +34,7 @@ exports.getAllNotes = ( req, res ) => {
     .exec()
     .then( ( notes ) => {
       res.render( 'notes', {
-        notes:notes, title:"Notes"
+        notes:notes, header:"Notes"
       } );
     } )
     .catch( ( error ) => {
@@ -55,7 +55,7 @@ exports.getOneNote = ( req, res ) => {
     .exec()
     .then( ( note ) => {
       res.render( 'note', {
-        note:note, title:"Note"
+        note:note, header:"Note"
       } );
     } )
     .catch( ( error ) => {

@@ -70,7 +70,6 @@ app.use((req,res,next) => {
   res.locals.title="BootLeg"
   res.locals.loggedIn = false
   if (req.isAuthenticated()){
-      console.log("user has been Authenticated")
       res.locals.user = req.user
       res.locals.loggedIn = true
     }
@@ -198,9 +197,16 @@ app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
 
+<<<<<<< HEAD
 app.get('/Language', (req, res) => {
   res.render('Language',{title:"Language"});
 });
+=======
+app.get('/discord', (req, res) => {
+  res.render('Discord',{title:"discord"});
+});
+
+>>>>>>> 8bb73abf435e0c9b83611cabbd318cba0c8c0a05
 
 // myform demo ...
 

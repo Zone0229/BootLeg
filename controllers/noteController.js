@@ -6,11 +6,11 @@ exports.saveNote = ( req, res ) => {
   //console.dir(req)
   let newNote = new Note(
    {
-     header: req.body.String,
-     text: req.body.String,
-     postdate: req.body.Date,
-     commentcount: req.body.Number,
-     textbook: req.body.String,
+     header: req.body.header,
+     text: req.body.text,
+     postdate: new Date(),
+     //commentcount: req.body.Number,
+     textbook: req.body.textbook,
    }
   )
 
@@ -33,6 +33,8 @@ exports.getAllNotes = ( req, res ) => {
   Note.find()
     .exec()
     .then( ( notes ) => {
+      console.log("in gatAllNotes")
+      console.dir(notes)
       res.render( 'notes', {
         notes:notes, title:"Notes"
       } );

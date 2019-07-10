@@ -202,12 +202,80 @@ app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
 
+app.get("/mathTextBooks/algebra", (req, res) => {
+  res.render('mathTextBooks/algebra',{title:"algebra"});
+});
+
 app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });
 
 app.get("/historyTextBooks/americanStudies", (req, res) => {
   res.render('historyTextBooks/americanStudies',{title:"history"});
+});
+
+app.get("/historyTextBooks/econ", (req, res) => {
+  res.render('historyTextBooks/econ',{title:"history"});
+});
+
+app.get("/historyTextBooks/geo", (req, res) => {
+  res.render('historyTextBooks/geo',{title:"history"});
+});
+
+app.get("/historyTextBooks/gov", (req, res) => {
+  res.render('historyTextBooks/gov',{title:"history"});
+});
+
+app.get("/historyTextBooks/worldCiv", (req, res) => {
+  res.render('historyTextBooks/worldCiv',{title:"history"});
+});
+
+app.get("/englishTextBooks/americanLiterature", (req, res) => {
+  res.render('englishTextBooks/americanLiterature',{title:"english"});
+});
+
+app.get("/englishTextBooks/apLanguage", (req, res) => {
+  res.render('englishTextBooks/apLanguage',{title:"english"});
+});
+
+app.get("/englishTextBooks/apLiterature", (req, res) => {
+  res.render('englishTextBooks/apLiterature',{title:"english"});
+});
+
+app.get("/scienceTextBooks/bio", (req, res) => {
+  res.render('scienceTextBooks/bio',{title:"science"});
+});
+
+app.get("/scienceTextBooks/chem", (req, res) => {
+  res.render('scienceTextBooks/chem',{title:"science"});
+});
+
+app.get("/scienceTextBooks/cs", (req, res) => {
+  res.render('scienceTextBooks/cs',{title:"science"});
+});
+
+app.get("/scienceTextBooks/environmentalScience", (req, res) => {
+  res.render('scienceTextBooks/environmentalScience',{title:"science"});
+});
+
+app.get("/scienceTextBooks/physics", (req, res) => {
+  res.render('scienceTextBooks/physics',{title:"science"});
+});
+
+app.get("/languageTextBooks/french", (req, res) => {
+  res.render('languageTextBooks/french',{title:"language"});
+});
+
+app.get("/languageTextBooks/spanish", (req, res) => {
+  res.render('languageTextBooks/spanish',{title:"language"});
+});
+
+app.get("/languageTextBooks/latin", (req, res) => {
+  res.render('languageTextBooks/latin',{title:"language"});
+});
+
+app.get("/languageTextBooks/mandarin", (req, res) => {
+  res.render('languageTextBooks/mandarin',{title:"language"});
 });
 
 // myform demo ...

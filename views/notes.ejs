@@ -5,11 +5,12 @@
     </div>
     <ol>
     <% for(i = 0; i<notes.length; i++){  %>
-        <li> <a href="/showNote/<%= notes[i]._id %>">
+        <li> <a href="/showNotes/<%= notes[i]._id %>">
               <%= notes[i].header %></a>
               <i>
-             <%= notes[i].text %></\/i>
-        </li>
+             <%= notes[i].note %></\/i> </li>
+             <i>
+            <%= notes[i].textbook %></\/i> </li>
     <% } %>
     </ol>
 <%- include('bootfooter') -%>

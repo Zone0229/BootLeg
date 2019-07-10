@@ -194,6 +194,10 @@ app.get('/English', (req, res) => {
   res.render('English',{title:"English"});
 });
 
+app.get('/Language', (req, res) => {
+  res.render('Language',{title:"Language"});
+});
+
 app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });

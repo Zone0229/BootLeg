@@ -201,7 +201,6 @@ app.get('/Math', (req, res) => {
 app.get('/Language', (req, res) => {
   res.render('Language',{title:"Language"});
 });
-=======
 app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });

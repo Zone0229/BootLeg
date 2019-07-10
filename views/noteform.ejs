@@ -1,14 +1,17 @@
 <%- include('bootheader') -%>
 <%- include('menubar') -%>
     <div class="jumbotron">
-        <h1>Global Webpage Note Form</h1>
-        <p>add notes to any page on the web ...</p>
+        <h1>Make a Note </h1>
+        <p>Add a note to your desired book</p>
     </div>
 
     <form method="post" action="/processnote">
         header: <input type="text" id="header" name="header" value="Your Title"> <br>
         text: <textarea id="text" name="text" value="What are your notes?"></textarea><br>
         textbook: <input type="text" id="textbook" name="textbook" value="Your Textbook">
+        <p>
+        postdate: <script name="postdate">  document.write(new Date().toLocaleDateString()); </script>
+        </p>
       <input type="submit">
     </form>
 

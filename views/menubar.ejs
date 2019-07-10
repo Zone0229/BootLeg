@@ -1,6 +1,7 @@
 <style>
-  h4.a {
+  a.a {
     font-family: "Courier New", Courier, monospace;
+    font-size: 24pt;
   }
 
 </style>
@@ -8,7 +9,7 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <h4 class="navbar-brand" href="/"><img src="/images/bootleg.png"></h4>
+  <a class="navbar-brand" href="/"><img src="/images/bootleg.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -16,53 +17,53 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <h4 class="a nav-link" href="/">Home <span class="sr-only">(current)</span></h4>
+        <a class="a nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <h4 class="a nav-link" href="/notesmain">Notes</h4>
+        <a class="a nav-link" href="/notesmain">Notes</a>
       </li>
 
 
       <li class="nav-item dropdown">
-        <h4 class="a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Subjects
-        </h4>
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="a dropdown-item" href="/Math"><h4>Math</h4></a>
-          <a class="a dropdown-item" href="/English"><h4>English</h4></a>
-          <a class="a dropdown-item" href="/History"><h4>History</h4></a>
-          <a class="a dropdown-item" href="/Science"><h4>Science</h4></a>
-          <a class="a dropdown-item" href="/Language"><h4>Language</h4></a>
+          <a class="a dropdown-item" href="/Math">Math</a>
+          <a class="a dropdown-item" href="/English">English</a>
+          <a class="a dropdown-item" href="/History">History</a>
+          <a class="a dropdown-item" href="/Science">Science</a>
+          <a class="a dropdown-item" href="/Language">Language</a>
         </div>
       </li>
 
       <li class="nav-item dropdown">
-        <h4 class="a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Profiles
-        </h4>
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <h4 class="a dropdown-item" href="/profiles">Show Profiles</h4>
+          <a class="a dropdown-item" href="/profiles">Show Profiles</a>
           <div class="dropdown-divider"></div>
-          <h4 class="a dropdown-item" href="/profile">My Profile</h4>
-          <h4 class="a dropdown-item" href="/editProfile">Update Profile</h4>
+          <a class="a dropdown-item" href="/profile">My Profile</a>
+          <a class="a dropdown-item" href="/editProfile">Update Profile</a>
         </div>
       </li>
 
       <li class="nav-item">
-        <h4 class="a nav-link" href="/discord">Discord</h4>
+        <a class="a nav-link" href="/discord">Discord</a>
       </li>
 
       <% if (loggedIn) { %>
       <li class="nav-item">
-        <h4 class="a nav-link" href="/forum">Forum</h4>
+        <a class="a nav-link" href="/forum">Forum</a>
       </li>
 
       <li class="nav-item">
-        <h4 class="a nav-link active" href="/logout"> Logout</h4>
+        <a class="a nav-link active" href="/logout"> Logout</a>
       </li>
       <% } else { %>
         <li class="nav-item">
-          <h4 class="a nav-link active" href="/auth/google"> Login</h4>
+          <a class="a nav-link active" href="/auth/google"> Login</a>
         </li>
         <% }  %>
     </ul>

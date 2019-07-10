@@ -3,15 +3,20 @@
     <div class="jumbotron">
         <h1>Notes</h1>
     </div>
-    <ol>
+    <table class="table-bordered table-striped">
       <% for(i = 0; i<notes.length; i++){  %>
-          <li> <a href="/showNote/<%= notes[i]._id %>">
+          <tr>
+            <td>
+              <a href="/showNote/<%= notes[i]._id %>">
                 <%= notes[i].header %></a>
-                <i>
-              <%= notes[i].text %></\/i>
-               <i>
-              <%= notes[i].textbook %></\/i>
-             </li>
+              </td>
+                <td>
+              <%= notes[i].text %>
+              </td>
+               <td>
+              <%= notes[i].textbook %>
+              </td>
+             </tr>
       <% } %>
-    </ol>
+    </table>
 <%- include('bootfooter') -%>

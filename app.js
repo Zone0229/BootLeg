@@ -198,10 +198,16 @@ app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
 
+
+app.get('/Language', (req, res) => {
+  res.render('Language',{title:"Language"});
+});
+=======
 app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });
 
+>>>>>>> 8bb73abf435e0c9b83611cabbd318cba0c8c0a05
 
 // myform demo ...
 

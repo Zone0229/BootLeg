@@ -1,11 +1,25 @@
 <%- include('bootheader') -%>
 <%- include('menubar') -%>
 
+<style>
+  h1.a {
+    font-family: Georgia, serif;
+  }
+  h3.a {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+</style>
+
+
+
+
+
     <div class="media">
 
       <div class="media-body">
-        <h1>Here is our slogan.</h1>
-        <h2 class="mb-0">Do you have a problem in taking notes in class? Do you want to see the good students' notes and get good scores? Try BootLeg! You can always find what you want here.</h2>
+        <h1 class="a font-weight-bold font-italic">Here is our slogan.</h1><br>
+        <h3 class="a font-weight-light">Do you have a problem in taking notes in class? Do you want to see the good students' notes and get good scores? Try BootLeg! You can always find what you want here.</h3>
       </div>
 
     </div>
@@ -15,7 +29,7 @@
 
 
 
-    <div class="bd-example; center" style="width: 50%">
+    <div class="bd-example; center" style="width: 100%">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -29,28 +43,43 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/math.jpg" class="d-block w-100">
+            <img src="images/math.jpg" class="w-100 text-center" alt="Center Align image in bootstrap">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark bg-white font-fantasy"><strong>study of such topics as quantity, structure, space, and change</h4>
+            </div>
           </div>
 
 
           <div class="carousel-item">
             <img src="images/english.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark bg-white font-fantasy"><strong>West Germanic language that was first spoken in early medieval England</h4>
+            </div>
           </div>
 
 
           <div class="carousel-item">
             <img src="images/history.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark bg-white font-fantasy"><strong>past as it is described in written documents</h4>
+            </div>
           </div>
 
 
           <div class="carousel-item">
             <img src="images/science.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark bg-white font-fantasy"><strong>systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe</h4>
+            </div>
           </div>
 
 
 
           <div class="carousel-item">
             <img src="images/language.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-dark bg-white font-fantasy"><strong>system that consists of the development, acquisition, maintenance and use of complex systems of communication, particularly the human ability to do so</h4>
+            </div>
           </div>
         </div>
 

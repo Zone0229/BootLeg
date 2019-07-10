@@ -70,6 +70,7 @@ app.use((req,res,next) => {
   res.locals.title="BootLeg"
   res.locals.loggedIn = false
   if (req.isAuthenticated()){
+      console.log("User has been authenticated.")
       res.locals.user = req.user
       res.locals.loggedIn = true
     }

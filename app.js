@@ -25,7 +25,7 @@ const commentController = require('./controllers/commentController')
 const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
-const HistoryController = require('./controllers/HistoryController')
+const historyController = require('./controllers/historyController')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
@@ -166,7 +166,7 @@ app.get('/', function(req, res, next) {
   res.render('index',{title:"BootLeg"});
 });
 
-app.get('/History',HistoryController.getAllMovieRatings)
+app.get('/History',historyController.getAllMovieRatings)
 
 
 app.get('/forum',forumPostController.getAllForumPosts)

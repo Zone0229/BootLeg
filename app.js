@@ -237,6 +237,9 @@ app.post('/processnote', noteController.saveNote)
 app.get('/noteform', function(req, res, next) {
   res.render('noteform',{title:"Note"});
 });
+app.get('/notesmain', function(req, res, next) {
+  res.render('notesmain',{title:"Notesmain"});
+});
 
 function processFormData(req,res,next){
   res.render('formdata',

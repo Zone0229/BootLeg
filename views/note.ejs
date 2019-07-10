@@ -1,0 +1,11 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Note for <%= note._id %> </h1>
+    </div>
+    Title: <%= note.header %> <br>
+    Note: <%= note.text %>
+    Textbook: <%= note.textbook %>
+    <hr>
+
+<%- include('bootfooter') -%>

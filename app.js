@@ -206,6 +206,9 @@ app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });
 
+app.get("/historyTextBooks/americanStudies", (req, res) => {
+  res.render('historyTextBooks/americanStudies',{title:"history"});
+});
 
 // myform demo ...
 

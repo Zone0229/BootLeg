@@ -190,8 +190,8 @@ app.get('/griddemo', function(req, res, next) {
 
 
 
-app.get('/bmidemo', (req, res) => {
-  res.render('bmidemo',{title:"BMI Demo"});
+app.get('/English', (req, res) => {
+  res.render('English',{title:"English"});
 });
 
 

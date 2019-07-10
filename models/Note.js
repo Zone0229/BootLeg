@@ -7,7 +7,7 @@ var noteSchema = Schema( {
   text: String,
   //postdate: Date,
   //commentcount: Number,
-  textbook: String,
+  textbook: String
 
 } );
 

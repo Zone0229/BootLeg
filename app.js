@@ -194,6 +194,10 @@ app.get('/English', (req, res) => {
   res.render('English',{title:"English"});
 });
 
+app.get('/Language', (req, res) => {
+  res.render('Language',{title:"Language"});
+});
+
 app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
@@ -208,15 +212,12 @@ app.get('/discord', (req, res) => {
 app.get('/myform', function(req, res, next) {
   res.render('myform',{title:"Form Demo"});
 });
-app.get('/noteform', function(req, res, next) {
-  res.render('noteform',{title:"Note"});
-});
+
 app.get('/science', function(req, res, next) {
   res.render('science',{title:"Note Demo"});
 });
 
 app.post('/processform', commentController.saveComment)
-app.post('/processnote', noteController.saveNote)
 
 
 app.get('/showComments', commentController.getAllComments)
@@ -225,7 +226,14 @@ app.get('/showNotes', noteController.getAllNotes)
 // but here we are more direct
 
 app.get('/showComment/:id', commentController.getOneComment)
+//ALL NOTES SYSTEMS
 app.get('/showNote/:id', noteController.getOneNote)
+app.get('/showNotes', noteController.getAllNotes)
+app.post('/processnote', noteController.saveNote)
+
+app.get('/noteform', function(req, res, next) {
+  res.render('noteform',{title:"Note"});
+});
 
 function processFormData(req,res,next){
   res.render('formdata',

@@ -202,6 +202,10 @@ app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
 
+app.get("/mathTextBooks/algebra", (req, res) => {
+  res.render('mathTextBooks/algebra',{title:"algebra"});
+});
+
 app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });

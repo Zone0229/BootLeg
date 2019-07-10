@@ -202,6 +202,10 @@ app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
 
+app.get("/mathTextBooks/algebra", (req, res) => {
+  res.render('mathTextBooks/algebra',{title:"algebra"});
+});
+
 app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });
@@ -236,6 +240,42 @@ app.get("/englishTextBooks/apLanguage", (req, res) => {
 
 app.get("/englishTextBooks/apLiterature", (req, res) => {
   res.render('englishTextBooks/apLiterature',{title:"english"});
+});
+
+app.get("/scienceTextBooks/bio", (req, res) => {
+  res.render('scienceTextBooks/bio',{title:"science"});
+});
+
+app.get("/scienceTextBooks/chem", (req, res) => {
+  res.render('scienceTextBooks/chem',{title:"science"});
+});
+
+app.get("/scienceTextBooks/cs", (req, res) => {
+  res.render('scienceTextBooks/cs',{title:"science"});
+});
+
+app.get("/scienceTextBooks/environmentalScience", (req, res) => {
+  res.render('scienceTextBooks/environmentalScience',{title:"science"});
+});
+
+app.get("/scienceTextBooks/physics", (req, res) => {
+  res.render('scienceTextBooks/physics',{title:"science"});
+});
+
+app.get("/languageTextBooks/french", (req, res) => {
+  res.render('languageTextBooks/french',{title:"language"});
+});
+
+app.get("/languageTextBooks/spanish", (req, res) => {
+  res.render('languageTextBooks/spanish',{title:"language"});
+});
+
+app.get("/languageTextBooks/latin", (req, res) => {
+  res.render('languageTextBooks/latin',{title:"language"});
+});
+
+app.get("/languageTextBooks/mandarin", (req, res) => {
+  res.render('languageTextBooks/mandarin',{title:"language"});
 });
 
 // myform demo ...

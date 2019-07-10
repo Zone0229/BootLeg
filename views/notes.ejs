@@ -1,0 +1,16 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Notes</h1>
+    </div>
+    <ol>
+    <% for(i = 0; i<notes.length; i++){  %>
+        <li> <a href="/showNotes/<%= notes[i]._id %>">
+              <%= notes[i].header %></a>
+              <i>
+             <%= notes[i].note %></\/i> </li>
+             <i>
+            <%= notes[i].textbook %></\/i> </li>
+    <% } %>
+    </ol>
+<%- include('bootfooter') -%>

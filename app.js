@@ -194,6 +194,9 @@ app.get('/English', (req, res) => {
   res.render('English',{title:"English"});
 });
 
+app.get('/Math', (req, res) => {
+  res.render('Math',{title:"Math"});
+});
 
 
 // myform demo ...

@@ -70,7 +70,7 @@ app.use((req,res,next) => {
   res.locals.title="BootLeg"
   res.locals.loggedIn = false
   if (req.isAuthenticated()){
-      console.log("user has been Authenticated")
+      console.log("User has been authenticated.")
       res.locals.user = req.user
       res.locals.loggedIn = true
     }
@@ -196,6 +196,10 @@ app.get('/English', (req, res) => {
 
 app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
+});
+
+app.get('/discord', (req, res) => {
+  res.render('Discord',{title:"discord"});
 });
 
 

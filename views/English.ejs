@@ -5,29 +5,5 @@
         <p>Select your English class</p>
     </div>
 
-    <hr>
-    <h1>English</h1>
-    <br>
-
-
-    <script>
-      function calc(){
-        var h = document.getElementById('height')
-        var w = document.getElementById('weight')
-        var bmi = document.getElementById('BMI')
-
-        bmi.innerText = 703*w.value/(h.value*h.value)
-      }
-
-      function reset(){
-        var h = document.getElementById('height')
-        var w = document.getElementById('weight')
-        var bmi = document.getElementById('BMI')
-        h.value=""
-        w.value=""
-        bmi.innerText = "????"
-      }
-    </script>
-
 
 <%- include('bootfooter') -%>

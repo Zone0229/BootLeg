@@ -25,7 +25,7 @@ const commentController = require('./controllers/commentController')
 const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
-const quiz2Controller = require('./controllers/quiz2Controller')
+const historyController = require('./controllers/historyController')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
@@ -70,7 +70,7 @@ app.use((req,res,next) => {
   res.locals.title="BootLeg"
   res.locals.loggedIn = false
   if (req.isAuthenticated()){
-      console.log("user has been Authenticated")
+      console.log("User has been authenticated.")
       res.locals.user = req.user
       res.locals.loggedIn = true
     }
@@ -166,7 +166,7 @@ app.get('/', function(req, res, next) {
   res.render('index',{title:"BootLeg"});
 });
 
-app.get('/quiz2',quiz2Controller.getAllMovieRatings)
+app.get('/History',historyController.getAllMovieRatings)
 
 
 app.get('/forum',forumPostController.getAllForumPosts)
@@ -190,10 +190,17 @@ app.get('/griddemo', function(req, res, next) {
 
 
 
-app.get('/bmidemo', (req, res) => {
-  res.render('bmidemo',{title:"BMI Demo"});
+app.get('/English', (req, res) => {
+  res.render('English',{title:"English"});
 });
 
+app.get('/Math', (req, res) => {
+  res.render('Math',{title:"Math"});
+});
+
+app.get('/discord', (req, res) => {
+  res.render('Discord',{title:"discord"});
+});
 
 
 // myform demo ...
@@ -201,8 +208,8 @@ app.get('/bmidemo', (req, res) => {
 app.get('/myform', function(req, res, next) {
   res.render('myform',{title:"Form Demo"});
 });
-app.get('/noteform', function(req, res, next) {
-  res.render('noteform',{title:"Note Demo"});
+app.get('/science', function(req, res, next) {
+  res.render('science',{title:"Note Demo"});
 });
 
 app.post('/processform', commentController.saveComment)

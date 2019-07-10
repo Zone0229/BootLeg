@@ -9,8 +9,8 @@ exports.getAllMovieRatings = ( req, res ) => {
   MovieRating.find()
     .exec()
     .then( ( ratings ) => {
-      res.render( 'quiz2', {
-        title:"Quiz2",ratings:ratings
+      res.render( 'History', {
+        title:"History",ratings:ratings
       } );
     } )
     .catch( ( error ) => {

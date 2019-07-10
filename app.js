@@ -201,8 +201,8 @@ app.get('/bmidemo', (req, res) => {
 app.get('/myform', function(req, res, next) {
   res.render('myform',{title:"Form Demo"});
 });
-app.get('/noteform', function(req, res, next) {
-  res.render('noteform',{title:"Note Demo"});
+app.get('/science', function(req, res, next) {
+  res.render('science',{title:"Note Demo"});
 });
 
 app.post('/processform', commentController.saveComment)

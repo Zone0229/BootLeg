@@ -198,7 +198,7 @@ app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
 
-<<<<<<< HEAD
+
 app.get('/Language', (req, res) => {
   res.render('Language',{title:"Language"});
 });

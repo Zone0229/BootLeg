@@ -24,6 +24,7 @@ db.once('open', function() {
 const commentController = require('./controllers/commentController')
 const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
+const noteController = require('./controllers/noteController')
 const quiz2Controller = require('./controllers/quiz2Controller')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
@@ -200,8 +201,13 @@ app.get('/bmidemo', (req, res) => {
 app.get('/myform', function(req, res, next) {
   res.render('myform',{title:"Form Demo"});
 });
+app.get('/noteform', function(req, res, next) {
+  res.render('noteform',{title:"Note Demo"});
+});
 
 app.post('/processform', commentController.saveComment)
+app.post('/processnote', noteController.saveNote)
+
 
 app.get('/showComments', commentController.getAllComments)
 // app.use('/', indexRouter);  // this is how we use a router to handle the / path

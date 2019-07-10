@@ -25,7 +25,7 @@ const commentController = require('./controllers/commentController')
 const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
-const quiz2Controller = require('./controllers/quiz2Controller')
+const HistoryController = require('./controllers/HistoryController')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
@@ -166,7 +166,7 @@ app.get('/', function(req, res, next) {
   res.render('index',{title:"BootLeg"});
 });
 
-app.get('/quiz2',quiz2Controller.getAllMovieRatings)
+app.get('/History',HistoryController.getAllMovieRatings)
 
 
 app.get('/forum',forumPostController.getAllForumPosts)
@@ -190,8 +190,8 @@ app.get('/griddemo', function(req, res, next) {
 
 
 
-app.get('/bmidemo', (req, res) => {
-  res.render('bmidemo',{title:"BMI Demo"});
+app.get('/English', (req, res) => {
+  res.render('English',{title:"English"});
 });
 
 
@@ -201,8 +201,8 @@ app.get('/bmidemo', (req, res) => {
 app.get('/myform', function(req, res, next) {
   res.render('myform',{title:"Form Demo"});
 });
-app.get('/noteform', function(req, res, next) {
-  res.render('noteform',{title:"Note Demo"});
+app.get('/science', function(req, res, next) {
+  res.render('science',{title:"Note Demo"});
 });
 
 app.post('/processform', commentController.saveComment)

@@ -210,6 +210,24 @@ app.get("/historyTextBooks/americanStudies", (req, res) => {
   res.render('historyTextBooks/americanStudies',{title:"history"});
 });
 
+app.get("/historyTextBooks/econ", (req, res) => {
+  res.render('historyTextBooks/econ',{title:"history"});
+});
+
+app.get("/historyTextBooks/geo", (req, res) => {
+  res.render('historyTextBooks/geo',{title:"history"});
+});
+
+app.get("/historyTextBooks/gov", (req, res) => {
+  res.render('historyTextBooks/gov',{title:"history"});
+});
+
+app.get("/historyTextBooks/worldCiv", (req, res) => {
+  res.render('historyTextBooks/worldCiv',{title:"history"});
+});
+
+
+
 // myform demo ...
 
 app.get('/myform', function(req, res, next) {

@@ -6,7 +6,7 @@
     <ol>
       <% for(i = 0; i<notes.length; i++){  %>
           <li> <a href="/showNote/<%= notes[i]._id %>">
-                </a>
+                <%= notes[i].header %></a>
                 <i>
               <%= notes[i].text %></\/i>
                <i>

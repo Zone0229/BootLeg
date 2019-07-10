@@ -198,9 +198,6 @@ app.get('/Math', (req, res) => {
   res.render('Math',{title:"Math"});
 });
 
-app.get('/Language', (req, res) => {
-  res.render('Language',{title:"Language"});
-});
 app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });
@@ -210,9 +207,6 @@ app.get('/discord', (req, res) => {
 
 app.get('/myform', function(req, res, next) {
   res.render('myform',{title:"Form Demo"});
-});
-app.get('/noteform', function(req, res, next) {
-  res.render('noteform',{title:"Notes"});
 });
 app.get('/science', function(req, res, next) {
   res.render('science',{title:"Note Demo"});

@@ -5,9 +5,9 @@ const Schema = mongoose.Schema;
 var noteSchema = Schema( {
   header: String,
   text: String,
-  postdate: Date,
-  commentcount: Number,
-  textbook: String,
+  //postdate: Date,
+  //commentcount: Number,
+  textbook: String
 
 } );
 

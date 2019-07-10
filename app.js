@@ -222,6 +222,7 @@ app.get('/showNotes', noteController.getAllNotes)
 // but here we are more direct
 
 app.get('/showComment/:id', commentController.getOneComment)
+app.get('/showNote/:id', noteController.getOneNote)
 
 function processFormData(req,res,next){
   res.render('formdata',

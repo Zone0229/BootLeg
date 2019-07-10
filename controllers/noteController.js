@@ -10,7 +10,7 @@ exports.saveNote = ( req, res ) => {
      text: req.body.text,
      //postdate: req.body.Date,
      //commentcount: req.body.Number,
-     textbook: req.body.textbook,
+     textbook: req.body.textbook
    }
   )
 

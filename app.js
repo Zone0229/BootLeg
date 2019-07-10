@@ -242,8 +242,25 @@ app.get("/englishTextBooks/apLiterature", (req, res) => {
   res.render('englishTextBooks/apLiterature',{title:"english"});
 });
 
+app.get("/scienceTextBooks/bio", (req, res) => {
+  res.render('scienceTextBooks/bio',{title:"science"});
+});
 
+app.get("/scienceTextBooks/chem", (req, res) => {
+  res.render('scienceTextBooks/chem',{title:"science"});
+});
 
+app.get("/scienceTextBooks/cs", (req, res) => {
+  res.render('scienceTextBooks/cs',{title:"science"});
+});
+
+app.get("/scienceTextBooks/environmentalScience", (req, res) => {
+  res.render('scienceTextBooks/environmentalScience',{title:"science"});
+});
+
+app.get("/scienceTextBooks/physics", (req, res) => {
+  res.render('scienceTextBooks/physics',{title:"science"});
+});
 
 // myform demo ...
 

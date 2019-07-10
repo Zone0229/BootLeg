@@ -6,11 +6,11 @@ exports.saveNote = ( req, res ) => {
   //console.dir(req)
   let newNote = new Note(
    {
-     header: req.body.String,
-     text: req.body.String,
+     header: req.body.header,
+     text: req.body.text,
      //postdate: req.body.Date,
      //commentcount: req.body.Number,
-     textbook: req.body.String,
+     textbook: req.body.textbook,
    }
   )
 

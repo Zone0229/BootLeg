@@ -226,7 +226,13 @@ app.get("/historyTextBooks/worldCiv", (req, res) => {
   res.render('historyTextBooks/worldCiv',{title:"history"});
 });
 
+app.get("/englishTextBooks/americanLiterature", (req, res) => {
+  res.render('englishTextBooks/americanLiterature',{title:"english"});
+});
 
+app.get("/englishTextBooks/apLanguage", (req, res) => {
+  res.render('englishTextBooks/apLanguage',{title:"english"});
+});
 
 // myform demo ...
 

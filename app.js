@@ -206,6 +206,27 @@ app.get("/mathTextBooks/algebra", (req, res) => {
   res.render('mathTextBooks/algebra',{title:"algebra"});
 });
 
+app.get("/mathTextBooks/algebra2", (req, res) => {
+  res.render('mathTextBooks/algebra2',{title:"algebra2"});
+});
+
+app.get("/mathTextBooks/geometry", (req, res) => {
+  res.render('mathTextBooks/geometry',{title:"geometry"});
+});
+
+app.get("/mathTextBooks/precalc", (req, res) => {
+  res.render('mathTextBooks/precalc',{title:"precalc"});
+});
+
+app.get("/mathTextBooks/stats", (req, res) => {
+  res.render('mathTextBooks/stats',{title:"stats"});
+});
+
+app.get("/mathTextBooks/calc", (req, res) => {
+  res.render('mathTextBooks/calc',{title:"calc"});
+});
+
+
 app.get('/discord', (req, res) => {
   res.render('Discord',{title:"discord"});
 });

@@ -8,7 +8,7 @@ exports.saveNote = ( req, res ) => {
    {
      header: req.body.header,
      text: req.body.text,
-     postdate: new Date(),
+     postdate: new Date().toLocaleDateString(),
      //commentcount: req.body.Number,
      textbook: req.body.textbook,
    }

@@ -1,3 +1,4 @@
+
 'use strict';
 const Book = require( '../models/Book' );
 const Bookchapt = require( '../models/Bookchapt  ' );
@@ -8,7 +9,8 @@ exports.saveBook = ( req, res ) => {
   //console.dir(req)
   let newBook = new Book(
    {
-     bookname: req.body.bookname,     
+     bookname: req.body.bookname,
+     bookchapt: req.body.bookchapt
    }
   )
 
@@ -56,71 +58,6 @@ exports.getOneBook = ( req, res ) => {
     .then( ( book ) => {
       res.render( 'book', {
         book:book, title:"Book"
-      } );
-    } )
-    .catch( ( error ) => {
-      console.log( error.message );
-      return [];
-    } )
-    .then( () => {
-      //console.log( 'skill promise complete' );
-    } );
-};
-
-
-exports.saveBookchapt = ( req, res ) => {
-  //console.log("in saveSkill!")
-  //console.dir(req)
-  let newBookchapt = new Bookchapt(
-   {
-     number: req.body.number,
-   }
-  )
-
-  //console.log("skill = "+newSkill)
-
-  newBookchapt.save()
-    .then( () => {
-      res.redirect( '/showBookchapts' );
-    } )
-    .catch( error => {
-      res.send( error );
-    } );
-};
-
-
-
-// this displays all of the skills
-exports.getAllBookchapts = ( req, res ) => {
-  //gconsle.log('in getAllSkills')
-  Bookchapt.find()
-    .exec()
-    .then( ( bookchapts ) => {
-      console.log("in gatAllBookchapts")
-      console.dir(bookchapts)
-      res.render( 'bookchapts', {
-        bookchapts:bookchapts, title:"Bookchapts"
-      } );
-    } )
-    .catch( ( error ) => {
-      console.log( error.message );
-      return [];
-    } )
-    .then( () => {
-      //console.log( 'skill promise complete' );
-    } );
-};
-
-// this displays all of the skills
-exports.getOneBookchapt = ( req, res ) => {
-  //gconsle.log('in getAllSkills')
-  const id = req.params.id
-  console.log('the id is '+id)
-  Bookchapt.findOne({_id:id})
-    .exec()
-    .then( ( bookchapt ) => {
-      res.render( 'bookchapt', {
-        bookchapt:bookchapt, title:"Bookchapt"
       } );
     } )
     .catch( ( error ) => {

@@ -26,6 +26,7 @@ const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
 const historyController = require('./controllers/historyController')
+const isbnController = require('./controllers/isbnController')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
@@ -319,6 +320,8 @@ app.get('/science', function(req, res, next) {
 
 app.post('/processform', commentController.saveComment)
 
+app.post('/findISBN', isbnController.findISBN)
+
 
 app.get('/showComments', commentController.getAllComments)
 app.get('/showNotes', noteController.getAllNotes)
@@ -342,6 +345,8 @@ function processFormData(req,res,next){
   res.render('formdata',
      {title:"Form Data",url:req.body.url, coms:req.body.theComments})
 }
+
+
 
 
 

@@ -8,13 +8,12 @@
           <tr>
             <td>
               <a href="/showBook/<%= books[i]._id %>">
-                <%= books[i].bookname %></a>
-                </td>
-              <%= for(i = 0; i<bookchapt.length; i++){ %>
+                <%= books[i].header %></a>
+              </td>
                 <td>
-                  <a href="/showBookChapt/" <%= books[i]._id %>"></td>
-              <% } %>
-          </tr>
+              <%= books[i].text %>
+            </td>
+             </tr>
       <% } %>
     </table>
 <%- include('bootfooter') -%>

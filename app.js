@@ -26,6 +26,7 @@ const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
 const historyController = require('./controllers/historyController')
+const bookController = require('./controllers/bookController')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
@@ -336,6 +337,14 @@ app.get('/noteform', function(req, res, next) {
 });
 app.get('/notesmain', function(req, res, next) {
   res.render('notesmain',{title:"Notesmain"});
+});
+//ALL BOOK SYSTEMS
+app.get('/showBook/:id', bookController.getOneBook)
+app.get('/showBookChapt/:id', bookController.getOneBookChapt)
+app.get('/showBooks', bookController.getAllBooks)
+app.post('/processbook', bookController.saveBook)
+app.get('/bookform', function(req, res, next) {
+  res.render('bookform',{title:"Book"});
 });
 
 function processFormData(req,res,next){

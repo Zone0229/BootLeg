@@ -1,0 +1,20 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Books</h1>
+    </div>
+    <table class="table-bordered table-striped">
+      <% for(i = 0; i<books.length; i++){  %>
+          <tr>
+            <td>
+              <a href="/showBook/<%= books[i]._id %>">
+                <%= books[i].bookname %></a>
+                </td>
+              <%= for(i = 0; i<bookchapt.length; i++){ %>
+                <td>
+                  <a href="/showBookChapt/" <%= books[i]._id %>"></td>
+              <% } %>
+          </tr>
+      <% } %>
+    </table>
+<%- include('bootfooter') -%>

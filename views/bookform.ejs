@@ -1,0 +1,15 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Make a Book </h1>
+        <p>Add a book to your desired book</p>
+    </div>
+
+    <form method="post" action="/processbook">
+        Book title: <input type="text" id="book" name="bookname" value="Book Title">
+        How many chapters?: <input type="text" id="chaptercount" name="bookchapt" value="1">
+      <input type="submit">
+    </form>
+
+
+<%- include('bootfooter') -%>

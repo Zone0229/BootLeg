@@ -3,7 +3,6 @@ const mongoose = require( 'mongoose' );
 const Schema = mongoose.Schema;
 
 var bookSchema = Schema( {
-  bookname: String,
   bookchapt: Number,
 } );
 

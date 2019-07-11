@@ -14,7 +14,25 @@ flash = require('connect-flash')
 // END OF AUTHENTICATION MODULES
 
 const mongoose = require( 'mongoose' );
-mongoose.connect( 'mongodb://localhost/mydb', { useNewUrlParser: true } );
+const MONGOLAB_GREEN_URI = 'mongodb://heroku_m0gs3wzq:15caahgqgedl9ioi4o747stjot@ds243607.mlab.com:43607/heroku_m0gs3wzq'
+
+var uristring =
+    process.env.MONGOLAB_GREEN_URI ||
+    process.env.MONGOHQ_URL ||
+    'mongodb://localhost/mydb';
+
+    // Makes connection asynchronously.  Mongoose will queue up database
+    // operations and release them when the connection is complete.
+    mongoose.connect(uristring, function (err, res) {
+      if (err) {
+      console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+      } else {
+      console.log ('Succeeded connected to: ' + uristring);
+      }
+    });
+
+
+//mongoose.connect( 'mongodb://localhost/mydb', { useNewUrlParser: true } );
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {

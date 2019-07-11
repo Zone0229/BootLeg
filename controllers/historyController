@@ -1,20 +1,12 @@
 'use strict';
-const BookRating = require( '../models/BookRating' );
+const MovieRating = require( '../models/MovieRating' );
 
-exports.Book = ( req, res ) => {
-  //console.log("in saveSkill!")
-  //console.dir(req)
-  let newBook = new Book(
-   {
-     textbook: req.body.textbook,
-   }
-  )
 
 
 // this displays all of the skills
-exports.getAll BookRatings = ( req, res ) => {
+exports.getAllMovieRatings = ( req, res ) => {
   //gconsle.log('in getAllSkills')
-  BookRating.find()
+  MovieRating.find()
     .exec()
     .then( ( ratings ) => {
       res.render( 'History', {

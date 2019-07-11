@@ -11,7 +11,7 @@ var userSchema = Schema( {
   googlename:String,
   googleemail:String,
   description: String,
-  profilePicURL: String,
+  profilePic: String,
   bio: String,
   lastUpdate: Date,
   userName: String,

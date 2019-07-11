@@ -263,6 +263,10 @@ app.get("/englishTextBooks/apLiterature", (req, res) => {
   res.render('englishTextBooks/apLiterature',{title:"english"});
 });
 
+app.get("/englishTextBooks/worldLiterature", (req, res) => {
+  res.render('englishTextBooks/worldLiterature',{title:"english"});
+});
+
 app.get("/scienceTextBooks/bio", (req, res) => {
   res.render('scienceTextBooks/bio',{title:"science"});
 });

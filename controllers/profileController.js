@@ -13,7 +13,7 @@ exports.update = ( req, res ) => {
     console.log("just found a profile")
     console.dir(p)
     p.userName = req.body.userName
-    p.profilePicURL = req.body.profilePicURL
+    p.profilePic = req.body.profilePic
     p.zipcode = req.body.zipcode
     p.lastUpdate = new Date()
     p.save()

@@ -8,9 +8,12 @@
     <form method="post" action="/processnote">
         header: <input type="text" id="header" name="header" value="Your Title"> <br>
         text: <textarea id="text" name="text" value="What are your notes?"></textarea><br>
-        textbook: <input type="text" id="textbook" name="textbook" value=textbook>
+        textbook: <input type="text" id="textbook" name="textbook" value=;>
         <p>
-        postdate: <script name="postdate">  document.write(new Date().toLocaleDateString()); </script>
+        <script>
+          var data = localStorage.getItem("textbook");
+          document.getElementById("textbook").value = data;
+        </script>
         </p>
       <input type="submit">
     </form>

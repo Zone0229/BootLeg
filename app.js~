@@ -17,7 +17,6 @@ const mongoose = require( 'mongoose' );
 const MONGOLAB_GREEN_URI = 'mongodb://heroku_m0gs3wzq:15caahgqgedl9ioi4o747stjot@ds243607.mlab.com:43607/heroku_m0gs3wzq'
 
 var uristring =
-    MONGOLAB_GREEN_URI ||
     process.env.MONGOLAB_GREEN_URI ||
     process.env.MONGOHQ_URL ||
     'mongodb://localhost/mydb';
@@ -46,9 +45,7 @@ const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
 const historyController = require('./controllers/historyController')
 
-
 const isbnController = require('./controllers/isbnController')
-const apiController = require('./controllers/apiController')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
@@ -211,30 +208,6 @@ app.get('/griddemo', function(req, res, next) {
   res.render('griddemo',{title:"Grid Demo"});
 });
 
-app.get('/dov', (req, res) => {
-  res.render('dov',{title:"dov"});
-});
-
-app.get('/jackA', (req, res) => {
-  res.render('jackA',{title:"jackA"});
-});
-
-app.get('/jackF', (req, res) => {
-  res.render('jackF',{title:"jackF"});
-});
-
-app.get('/jason', (req, res) => {
-  res.render('jason',{title:"jason"});
-});
-
-app.get('/william', (req, res) => {
-  res.render('william',{title:"william"});
-});
-
-app.get('/zone', (req, res) => {
-  res.render('zone',{title:"zone"});
-});
-
 
 
 app.get('/English', (req, res) => {
@@ -354,20 +327,6 @@ app.get("/languageTextBooks/mandarin", (req, res) => {
   res.render('languageTextBooks/mandarin',{title:"language"});
 });
 
-const axios = require("axios")
-const util = require("util")
-app.get("/apitest",(req,res) =>{
-  axios.get("https://www.googleapis.com/books/v1/volumes?q=Harry+Potter")
-  .then((result)=>{
-
-    console.dir(result.data)
-    res.send(result.data)
-  })
-  .catch((error)=>{
-    res.send("apitest error = "+error)
-  })
-})
-
 // myform demo ...
 
 app.get('/myform', function(req, res, next) {
@@ -382,7 +341,6 @@ app.post('/processform', commentController.saveComment)
 
 
 app.post('/findISBN', isbnController.findISBN)
-app.post('/findBook', apiController.findBook)
 
 
 app.get('/showComments', commentController.getAllComments)

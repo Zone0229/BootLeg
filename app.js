@@ -191,7 +191,6 @@ app.get('/griddemo', function(req, res, next) {
 });
 
 
-
 app.get('/English', (req, res) => {
   res.render('English',{title:"English"});
 });
@@ -206,6 +205,10 @@ app.get('/Math', (req, res) => {
 
 app.get("/mathTextBooks/algebra", (req, res) => {
   res.render('mathTextBooks/algebra',{title:"algebra"});
+});
+
+app.get("/mathTextBooks/generalAlgebra", (req, res) => {
+  res.render('mathTextBooks/generalAlgebra',{title:"generalAlgebra"});
 });
 
 app.get("/mathTextBooks/algebra2", (req, res) => {

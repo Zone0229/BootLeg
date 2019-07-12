@@ -1,5 +1,11 @@
 'use strict';
 const Note = require( '../models/Note' );
+const axios = require('axios');
+const util = require('util')
+//var apikey = require('../config/apikey');
+//console.dir(apikey)
+axios.defaults.headers.post['X-API-KEY'] = 'YOUR_REST_KEY' // for POST requests
+const api_key = "9097a0c7f9cd2d30eef1b6b4b50b6127"
 
 exports.saveNote = ( req, res ) => {
   //console.log("in saveSkill!")
@@ -13,10 +19,11 @@ exports.saveNote = ( req, res ) => {
      textbook: req.body.textbook,
      textbookmod: req.body.textbook,
    }
-  )
+ )
+
+  var data = localStorage.setItem("textbook",axios.get(`https://api.dp.la/v2/items?q=*&api_key=9097a0c7f9cd2d30eef1b6b4b50b6127`));
 
   //console.log("skill = "+newSkill)
-
   newNote.save()
     .then( () => {
       res.redirect( '/showNotes' );
@@ -24,6 +31,7 @@ exports.saveNote = ( req, res ) => {
     .catch( error => {
       res.send( error );
     } );
+
 };
 
 

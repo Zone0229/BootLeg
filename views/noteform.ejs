@@ -20,11 +20,13 @@
           //console.dir(apikey)
           axios.defaults.headers.post['X-API-KEY'] = 'YOUR_REST_KEY' // for POST requests
           const api_key = "9097a0c7f9cd2d30eef1b6b4b50b6127"
-          localStorage.setItem("textbook",axios.get('https://api.dp.la/v2/items?sourceResource.title=*&fields=sourceResource.title&api_key=9097a0c7f9cd2d30eef1b6b4b50b6127'));
+          while true{
+            }
+            var inputcore = document.getElementById("textbook").value;
+            localStorage.setItem("textbook",inputcore);
+            document.write(localStorage.getItem("textbook"));
           var data = localStorage.getItem("textbook");
           //document.getElementById("textbook").value = data;
-          var inputcore = document.getElementById("textbook").value;
-          document.write(localStorage.getItem("textbook"));
         </script>
 
         </p>

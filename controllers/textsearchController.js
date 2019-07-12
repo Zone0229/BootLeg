@@ -8,7 +8,7 @@ const api_key = "9097a0c7f9cd2d30eef1b6b4b50b6127"
 exports.findISBN = ( req, res ) => {
 
 
-  axios.get(`https://api.dp.la/v2/items?q=*deling&api_key=${req.body.item}&api_key=9097a0c7f9cd2d30eef1b6b4b50b6127`)
+  axios.get(`https://api.dp.la/v2/items?q=*deling&api_key=9097a0c7f9cd2d30eef1b6b4b50b6127`)
     .then(function (response) {
       console.log(util.inspect(response))
       //console.dir(response.keys())

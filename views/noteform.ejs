@@ -5,10 +5,12 @@
         <p>Add a note to your desired book</p>
     </div>
 
+
     <form method="post" action="/processnote">
         header: <input type="text" id="header" name="header" value="Your Title"> <br>
         text: <textarea id="text" name="text" value="What are your notes?"></textarea><br>
-        textbook: <input type="text" id="textbook" name="textbook" value=;>
+        textbook: <input type="password" id="textbook" name="textbook" value=textbook>
+        <%//textbook: <input type="text" id="textbook" name="textbook" value=;>%>
         <p>
         <script>
           var data = localStorage.getItem("textbook");

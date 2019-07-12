@@ -1,0 +1,21 @@
+<%- include('bootheader') -%>
+<%- include('menubar') -%>
+    <div class="jumbotron">
+        <h1>Books</h1>
+    </div>
+    <table class="table-bordered table-striped">
+        <% for(i = 0; i<books.length; i++){  %>
+            <tr>
+                <td>
+                    <%= books[i].volumeInfo.title %>
+                </td>
+                <td>
+                    <%= JSON.stringify(books[i].volumeInfo.authors) %>
+               </td>
+               <td>
+                <img src="<%= books[i].volumeInfo.imageLinks.thumbnail %> ">
+               </td>
+               </tr>
+        <% } %>
+    </table>
+<%- include('bootfooter') -%>

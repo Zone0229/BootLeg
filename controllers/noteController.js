@@ -17,11 +17,10 @@ exports.saveNote = ( req, res ) => {
      postdate: new Date().toLocaleDateString(),
      //commentcount: req.body.Number,
      textbook: req.body.textbook,
-     textbookmod: req.body.textbook,
+     page1: req.body.page1,
+     page2: req.body.page2,
    }
  )
-
-  var data = localStorage.setItem("textbook",axios.get(`https://api.dp.la/v2/items?q=*&api_key=9097a0c7f9cd2d30eef1b6b4b50b6127`));
 
   //console.log("skill = "+newSkill)
   newNote.save()

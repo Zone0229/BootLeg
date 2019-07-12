@@ -14,7 +14,9 @@ BootLeg is the most powerful tool you can use for your study.
 
 
 ### If I want to join the discussion of some subjects?
-> We have an official channel of Discord that you can share your ideas and ask other questions there.
+> We have an official channel of Discord that you can share your ideas and ask other questions there. Remember to bring your gmail so that you can join it.
+>
+> Both text and voice channels are available.
 >
 > ## To enter Discord, just click the "Discord" button on the top of the page.
 

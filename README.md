@@ -1,4 +1,4 @@
-![alt text](/public/images/bootleg.png "Logo")
+![alt text](/public/images/bootleg.png "This is our LOGO!")
 BootLeg: Notes from Everywhere
 ====================
 Are you struggling in class? Do you need to raise your grades? Try BootLeg! You can always find what you want here.

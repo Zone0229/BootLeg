@@ -6,11 +6,6 @@ Are you struggling in class? Do you need to raise your grades? Try BootLeg! You 
 
 ### BootLeg is the most powerful tool you can use for your study.
 
-<div class="btn-group" role="group" aria-label="Basic example">
-  <button type="button" class="btn btn-secondary">Left</button>
-  <button type="button" class="btn btn-secondary">Middle</button>
-  <button type="button" class="btn btn-secondary">Right</button>
-</div>
 
 ## Who needs BootLeg?
 > BootLeg is designed for those *high school and college students* who _have trouble taking notes_ or want to _improve their scores further_. It is also useful for those who miss some classes for some reason, like _catching a bad cold_.

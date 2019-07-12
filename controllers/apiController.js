@@ -31,3 +31,23 @@ exports.showOneBook = ( req, res ) => {
     res.send("apitest error = "+error)
   })
 }
+
+exports.saveNote = ( req, res ) => {
+  //console.log("in saveSkill!")
+  //console.dir(req)
+  let newBook = new Book(
+   {
+     title: req.body.title,
+   }
+ )
+
+  //console.log("skill = "+newSkill)
+  newBook.save()
+    .then( () => {
+      res.redirect( '/showBook' );
+    } )
+    .catch( error => {
+      res.send( error );
+    } );
+
+};

@@ -190,6 +190,31 @@ app.get('/griddemo', function(req, res, next) {
   res.render('griddemo',{title:"Grid Demo"});
 });
 
+app.get('/dov', (req, res) => {
+  res.render('dov',{title:"dov"});
+});
+
+app.get('/jackA', (req, res) => {
+  res.render('jackA',{title:"jackA"});
+});
+
+app.get('/jackF', (req, res) => {
+  res.render('jackF',{title:"jackF"});
+});
+
+app.get('/jason', (req, res) => {
+  res.render('jason',{title:"jason"});
+});
+
+app.get('/william', (req, res) => {
+  res.render('william',{title:"william"});
+});
+
+app.get('/zone', (req, res) => {
+  res.render('zone',{title:"zone"});
+});
+
+
 
 app.get('/English', (req, res) => {
   res.render('English',{title:"English"});

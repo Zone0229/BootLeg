@@ -1,5 +1,5 @@
-<%- include('../bootheader') -%>
-<%- include('../menubar') -%>
+<%- include('views/bootheader') -%>
+<%- include('views/menubar') -%>
     <div class="jumbotron">
         <h1>French</h1>
         <p>Select your French textbook.</p>
@@ -11,8 +11,7 @@
 <a href="/images/language/frenchTextBook/french2tb.jpg"><img src="/images/language/frenchTextBook/french2tb.jpg" style="width: 200px"></a>
 <a href="/images/language/frenchTextBook/french3tb.jpg"><img src="/images/language/frenchTextBook/french3tb.jpg" style="width: 200px"></a>
 
-    <script>let textbook = []</script>
-    <script>localStorage.setItem("textbook","French")</script>
 
-<%- include("../notescore") -%>
-<%- include('../bootfooter') -%>
+
+<%- include("views/notescore") -%>
+<%- include('views/bootfooter') -%>

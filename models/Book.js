@@ -3,8 +3,8 @@ const mongoose = require( 'mongoose' );
 const Schema = mongoose.Schema;
 
 var bookSchema = Schema( {
-  textbook: String
-
+  bookname: String,
+  bookchapt: Number,
 } );
 
 module.exports = mongoose.model( 'Book', bookSchema );

@@ -11,7 +11,7 @@ exports.saveNote = ( req, res ) => {
      postdate: new Date().toLocaleDateString(),
      //commentcount: req.body.Number,
      textbook: req.body.textbook,
-     textbookmod: req.body.textbookmod,
+     textbookmod: req.body.textbook,
    }
   )
 

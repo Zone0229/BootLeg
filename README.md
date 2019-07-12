@@ -4,11 +4,11 @@ BootLeg: Notes from Everywhere
 Are you struggling in class? Do you need to raise your grades? Try BootLeg! You can always find what you want here.
 ---------------------
 
-BootLeg is the most powerful tool you can use for your study.
+**__BootLeg is the most powerful tool you can use for your study.__**
 
 
 ### Who needs BootLeg?
-> BootLeg is designed for those _high school and college students_ who have trouble taking notes or want to __improve their scores further__. It is also useful for those who *miss some classes* for some reason, like **catching a bad cold_a_**.
+> BootLeg is designed for those *high school and college students* who _have trouble taking notes_ or want to _improve their scores further_. It is also useful for those who miss some classes for some reason, like _catching a bad cold_.
 
 
 ### What can I find in BootLeg?

@@ -3,11 +3,13 @@
     <div class="jumbotron">
         <h1>American Studies</h1>
         <p>Select your textbook</p>
+        <a href="/englishTextBooks/generalNotesAmericanStudies" class="btn btn-primary">Non Textbook Notes</a>
     </div>
 
 <a href="/images/history/amsTextbook/download.jpg"><img src="/images/history/amsTextbook/download.jpg" style="width: 200px"></a>
 
-
+<script>let textbook = []</script>
+<script>localStorage.setItem("textbook","American Studies")</script>
 
 <%- include("../notescore") -%>
 <%- include('../bootfooter') -%>

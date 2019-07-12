@@ -1,14 +1,20 @@
 <%- include('../bootheader') -%>
 <%- include('../menubar') -%>
+    <center>
     <div class="jumbotron">
-        <h1>World Literature</h1>
-        <p>Select your book.</p>
+        <h1 class="tnr">World Literature</h1>
+        <p class="tnr">Select your book.</p>
     </div>
+    </center>
 
 <a href="/images/english/odyssey.jpg"><img src="/images/english/odyssey.jpg" style="width: 200px"></a>
 <a href="/images/english/macbeth.jpg"><img src="/images/english/macbeth.jpg" style="width: 200px"></a>
 <a href="/images/english/juliusCaesar.jpg"><img src="/images/english/juliusCaesar.jpg" style="width: 200px"></a>
 <a href="/images/english/catcher.jpeg"><img src="/images/english/catcher.jpeg" style="width: 200px"></a>
+
+<script>let textbook = []</script>
+<script>localStorage.setItem("textbook","World Literature")</script>
+
 
 <%- include("../notescore") -%>
 <%- include('../bootfooter') -%>

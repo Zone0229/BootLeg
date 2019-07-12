@@ -46,7 +46,9 @@ const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
 const historyController = require('./controllers/historyController')
 
+
 const isbnController = require('./controllers/isbnController')
+const apiController = require('./controllers/apiController')
 // Authentication
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // here we set up authentication with passport
@@ -328,6 +330,20 @@ app.get("/languageTextBooks/mandarin", (req, res) => {
   res.render('languageTextBooks/mandarin',{title:"language"});
 });
 
+const axios = require("axios")
+const util = require("util")
+app.get("/apitest",(req,res) =>{
+  axios.get("https://www.googleapis.com/books/v1/volumes?q=Harry+Potter")
+  .then((result)=>{
+
+    console.dir(result.data)
+    res.send(result.data)
+  })
+  .catch((error)=>{
+    res.send("apitest error = "+error)
+  })
+})
+
 // myform demo ...
 
 app.get('/myform', function(req, res, next) {
@@ -342,6 +358,7 @@ app.post('/processform', commentController.saveComment)
 
 
 app.post('/findISBN', isbnController.findISBN)
+app.post('/findBook', apiController.findBook)
 
 
 app.get('/showComments', commentController.getAllComments)

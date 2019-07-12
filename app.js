@@ -208,10 +208,6 @@ app.get("/mathTextBooks/algebra", (req, res) => {
   res.render('mathTextBooks/algebra',{title:"algebra"});
 });
 
-app.get("/mathTextBooks/generalAlgebra", (req, res) => {
-  res.render('mathTextBooks/generalAlgebra',{title:"generalAlgebra"});
-});
-
 app.get("/mathTextBooks/algebra2", (req, res) => {
   res.render('mathTextBooks/algebra2',{title:"algebra2"});
 });

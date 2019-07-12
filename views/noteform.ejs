@@ -9,13 +9,24 @@
     <form method="post" action="/processnote">
         header: <input type="text" id="header" name="header" value="Your Title"> <br>
         text: <textarea id="text" name="text" value="What are your notes?"></textarea><br>
-        textbook: <input type="password" id="textbook" name="textbook" value=textbook>
+        textbook: <input type="text" id="textbook" name="textbook" value=textbook>
         <%//textbook: <input type="text" id="textbook" name="textbook" value=;>%>
         <p>
         <script>
+          const Note = require( '../models/Note' );
+          const axios = require('axios');
+          const util = require('util')
+          //var apikey = require('../config/apikey');
+          //console.dir(apikey)
+          axios.defaults.headers.post['X-API-KEY'] = 'YOUR_REST_KEY' // for POST requests
+          const api_key = "9097a0c7f9cd2d30eef1b6b4b50b6127"
+          localStorage.setItem("textbook",axios.get('https://api.dp.la/v2/items?sourceResource.title=*&fields=sourceResource.title&api_key=9097a0c7f9cd2d30eef1b6b4b50b6127'));
           var data = localStorage.getItem("textbook");
-          document.getElementById("textbook").value = data;
+          //document.getElementById("textbook").value = data;
+          var inputcore = document.getElementById("textbook").value;
+          document.write(localStorage.getItem("textbook"));
         </script>
+
         </p>
       <input type="submit">
     </form>

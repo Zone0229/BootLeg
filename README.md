@@ -5,6 +5,10 @@ Are you struggling in class? Do you need to raise your grades? Try BootLeg! You 
 
 BootLeg is the most powerful tool you can use for your study.
 
+### Who needs BootLeg?
+> BootLeg is designed for those high school and college students who have trouble taking notes or want to improve their scores further.
+
+
 ### What's in BootLeg?
 > In BootLeg you can see other people's notes from specific textbooks and use them for your own study. You can also share your note that you think good with others.
 >

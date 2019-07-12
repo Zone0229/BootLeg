@@ -1,4 +1,4 @@
-![alt text](/images/bootleg.png)
+![alt text](/public/images/bootleg.png "Logo")
 
 BootLeg: Notes from Everywhere
 ====================

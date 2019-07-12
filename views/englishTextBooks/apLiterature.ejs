@@ -1,10 +1,17 @@
-<%- include('views/bootheader') -%>
-<%- include('views/menubar') -%>
+<%- include('../bootheader') -%>
+<%- include('../menubar') -%>
     <div class="jumbotron">
         <h1>AP Literature</h1>
         <p>Select your book.</p>
     </div>
 
 
-<%- include("views/notescore") -%>
-<%- include('views/bootfooter') -%>
+
+
+
+
+    <script>let textbook = []</script>
+    <script>localStorage.setItem("textbook","AP Literature")</script>
+
+<%- include("../notescore") -%>
+<%- include('../bootfooter') -%>

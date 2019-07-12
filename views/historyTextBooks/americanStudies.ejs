@@ -1,5 +1,5 @@
-<%- include('view/bootheader') -%>
-<%- include('view/menubar') -%>
+<%- include('../bootheader') -%>
+<%- include('../menubar') -%>
     <div class="jumbotron">
         <h1>American Studies</h1>
         <p>Select your textbook</p>
@@ -8,7 +8,8 @@
 
 <a href="/images/history/amsTextbook/download.jpg"><img src="/images/history/amsTextbook/download.jpg" style="width: 200px"></a>
 
+<script>let textbook = []</script>
+<script>localStorage.setItem("textbook","American Studies")</script>
 
-
-<%- include("view/notescore") -%>
-<%- include('view/bootfooter') -%>
+<%- include("../notescore") -%>
+<%- include('../bootfooter') -%>

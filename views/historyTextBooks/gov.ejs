@@ -1,5 +1,5 @@
-<%- include('view/bootheader') -%>
-<%- include('view/menubar') -%>
+<%- include('../bootheader') -%>
+<%- include('../menubar') -%>
     <div class="jumbotron">
         <h1>Government</h1>
         <p>Select your textbook</p>
@@ -9,5 +9,9 @@
 
 
 
-<%- include("view/notescore") -%>
-<%- include('view/bootfooter') -%>
+    <script>let textbook = []</script>
+    <script>localStorage.setItem("textbook","Government")</script>
+
+
+<%- include("../notescore") -%>
+<%- include('../bootfooter') -%>

@@ -1,5 +1,5 @@
-<%- include('view/bootheader') -%>
-<%- include('view/menubar') -%>
+<%- include('../bootheader') -%>
+<%- include('../menubar') -%>
     <div class="jumbotron">
         <h1>World Literature</h1>
         <p>Select your book.</p>
@@ -10,5 +10,9 @@
 <a href="/images/english/juliusCaesar.jpg"><img src="/images/english/juliusCaesar.jpg" style="width: 200px"></a>
 <a href="/images/english/catcher.jpeg"><img src="/images/english/catcher.jpeg" style="width: 200px"></a>
 
-<%- include("view/notescore") -%>
-<%- include('view/bootfooter') -%>
+<script>let textbook = []</script>
+<script>localStorage.setItem("textbook","World Literature")</script>
+
+
+<%- include("../notescore") -%>
+<%- include('../bootfooter') -%>

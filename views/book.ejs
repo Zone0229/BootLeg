@@ -1,10 +1,10 @@
 <%- include('bootheader') -%>
 <%- include('menubar') -%>
     <div class="jumbotron">
-        <h1>Make or view notes for:<%= book._id %> </h1>
+        <h1>Make or view notes for:</h1>
     </div>
-    <% axios.get("https://www.googleapis.com/books/v1/volumes?q="+req.body.item2)%>
-    Title: <%= <book[i].volumeInfo.item2 %><br>
+    <% //axios.get("https://www.googleapis.com/books/v1/volumes?q="+req.body.item2)%>
+    Title: <%= book.title%><br>
     <hr>
 
 <%- include('bootfooter') -%>

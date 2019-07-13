@@ -1,5 +1,6 @@
 <%- include('bootheader') -%>
 <%- include('menubar') -%>
+
     <div class="jumbotron">
         <h1>Books</h1>
     </div>
@@ -9,14 +10,14 @@
                 <td>
                     <%= books[i].volumeInfo.title %>
                 </td>
-                <td>
-                    <%= JSON.stringify(books[i].volumeInfo.authors) %>
+                <td><%= authors(books[i]) %> ...
                </td>
                <td>
-                <a href = "/showBook"><img src="<%= books[i].volumeInfo.imageLinks.thumbnail %> "> </a>
-
+                <a href = "/showBook"><img src="<%= thumbnail(books[i]) %> "> </a>
+                  <%//book.title = books[i].volumeInfo.title%>
                </td>
                </tr>
         <% } %>
     </table>
+    s
 <%- include('bootfooter') -%>

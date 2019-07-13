@@ -8,13 +8,13 @@ Are you struggling in class? Do you need to raise your grades? Try BootLeg! You 
 
 
 ## Who needs BootLeg?
-> BootLeg is designed for those *high school and college students* who _have trouble taking notes_ or want to _improve their scores further_. It is also useful for those who miss some classes for some reason, like _catching a bad cold_.
+> * BootLeg is designed for those *high school and college students* who _have trouble taking notes_ or want to _improve their scores further_. It is also useful for those who miss some classes for some reason, like _catching a bad cold_.
 
 
 ## What can I find in BootLeg?
-> In BootLeg you can see other people's notes from specific textbooks and use them for your own study. You can also share your note that you think good with others.
+> * In BootLeg you can see other people's notes from specific textbooks and use them for your own study. You can also share your note that you think good with others.
 >
-> We have a rate system so that you can easily find out if one note is good or not. You can also subscribe somebody if you really like his or her notes.
+> * We have a rate system so that you can easily find out if one note is good or not. You can also subscribe somebody if you really like his or her notes.
 >
 > ### Everything you need to do is find the notes you like and study!
 

@@ -90,7 +90,7 @@ const approvedLogins = ["tjhickey724@gmail.com","csjbs2018@gmail.com"];
 
 // here is where we check on their logged in status
 app.use((req,res,next) => {
-  res.locals.title="BootLeg"
+  res.locals.title="LegUp"
   res.locals.loggedIn = false
   if (req.isAuthenticated()){
       console.log("User has been authenticated.")
@@ -186,7 +186,7 @@ app.use(function(req,res,next){
 
 
 app.get('/', function(req, res, next) {
-  res.render('index',{title:"BootLeg"});
+  res.render('index',{title:"LegUp"});
 });
 
 app.get('/History',historyController.getAllMovieRatings)

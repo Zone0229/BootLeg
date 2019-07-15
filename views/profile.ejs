@@ -1,10 +1,10 @@
 <%- include('bootheader') -%>
 <%- include('menubar') -%>
     <div class="jumbotron">
-        <h1>BootLeg Profile for <%= user.userName %></h1>
+        <h1>LegUp Profile for <%= user.userName %></h1>
         <img src="<%= user.profilePic%>" width="200">
         <hr>
-        <p> Welcome, <%= user.googlename %> with email: <%= user.googleemail %>.You are logged in to BootLeg!
+        <p> Welcome, <%= user.googlename %> with email: <%= user.googleemail %>.You are logged in to LegUp!
         </p>
         <p> <%= user.zipcode %> <%= user.city %> <%= user.state %>
 <a href="/editProfile">edit profile</a>

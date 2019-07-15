@@ -1,10 +1,10 @@
 ![alt text](/public/images/bootleg.png "This is our LOGO!")
 BootLeg: Notes from Everywhere
 ====================
-*Are you struggling in class?* _Do you need to raise your grades?_ **Try BootLeg!** You can always find what you want here.
+Are you struggling in class? Do you need to raise your grades? Try BootLeg! You can always find what you want here.
 ---------------------
 
-### BootLeg is the most powerful tool you can use for your study.
+### *BootLeg* **is** _the_ most powerful tool you can use for your study.
 
 
 ## Who needs BootLeg?

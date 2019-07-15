@@ -1,6 +1,6 @@
 
     <div class="jumbotron">
-        <h1>Make a Note, and make it good! </h1>
+        <h1>Make a Note! </h1>
         <p>Add a note to your desired book</p>
     </div>
 
@@ -11,7 +11,7 @@
         <br><br><br>Textbook: <input type="text"  id="textbook" name="textbook" value="<%= book.title %>">
         <br><br>Pages: <input type="number" id="page1" name="page1" value=1> -
         <input type="number" id="page2" name="page2" value=1>
-        <input type="text"  name="bookid" value="<%= book._id %>">
+        <input type="hidden"  name="bookid" value="<%= book._id %>">
         <input type="submit">
 
     </form>

@@ -383,7 +383,8 @@ app.post('/processform', commentController.saveComment)
 
 app.post('/findISBN', isbnController.findISBN)
 app.post('/findBook', apiController.findBook)
-app.get('/showBook', apiController.showOneBook)
+app.get('/showBook/:id', apiController.ShowOneBook)
+app.post('/processBook', apiController.saveBook)
 
 
 

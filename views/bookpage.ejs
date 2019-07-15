@@ -6,18 +6,19 @@
     </div>
     <table class="table-bordered table-striped">
         <% for(i = 0; i<books.length; i++){  %>
-            <tr>
+            <form method="post" action="/processBook"> <tr>
                 <td>
-                    <%= books[i].volumeInfo.title %>
+                  <%= books[i].volumeInfo.title %> <input type="hidden" id="title" name="title" value="<%= books[i].volumeInfo.title %>">
                 </td>
                 <td>
                     <%= JSON.stringify(books[i].volumeInfo.authors) %>
                </td>
                <td>
-                <a href = "/showBook"><img src="<%= books[i].volumeInfo.imageLinks.thumbnail %> "> </a>
-                  <%//book.title = books[i].volumeInfo.title%>
+                <img src="<%= books[i].volumeInfo.imageLinks.thumbnail %> ">
+                  <input type="submit" value="Make or view Notes">
                </td>
                </tr>
+              </form>
         <% } %>
     </table>
 <%- include('bootfooter') -%>

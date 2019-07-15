@@ -7,8 +7,13 @@
 </style>
 
 
+<<<<<<< HEAD
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff5757;">
   <a class="navbar-brand" href="/"><img src="/images/LegUp.png" width="250" height="150" ></a>
+=======
+<nav class="navbar sticky-top navbar navbar-expand-lg navbar-light" style="background-color: #ff5757;">
+  <a class="navbar-brand" href="/"><img src="/images/Newlogo.png" width="250" height="150" ></a>
+>>>>>>> 497a992955e27a6d6d46fce4fac64fb852662a8a
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -18,34 +23,31 @@
       <li class="nav-item active">
         <b><a class="a nav-link" href="/">Home <span class="sr-only">(current)</span></a></b>
       </li>
-      <li class="nav-item">
-        <b><a class="a nav-link" href="/notesmain">Notes</a></b>
-      </li>
 
 
       <li class="nav-item dropdown">
         <b><a class="a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Subjects
-        </a></b>
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="a dropdown-item" href="/Math">Math</a>
           <a class="a dropdown-item" href="/English">English</a>
           <a class="a dropdown-item" href="/History">History</a>
           <a class="a dropdown-item" href="/Science">Science</a>
           <a class="a dropdown-item" href="/Language">Language</a>
-        </div>
+        </div></b>
       </li>
 
       <li class="nav-item dropdown">
         <b><a class="a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Profiles
-        </a></b>
+        </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="a dropdown-item" href="/profiles">Show Profiles</a>
           <div class="dropdown-divider"></div>
           <a class="a dropdown-item" href="/profile">My Profile</a>
           <a class="a dropdown-item" href="/editProfile">Update Profile</a>
-        </div>
+        </div></b>
       </li>
 
       <li class="nav-item">
@@ -55,7 +57,7 @@
       <li class="nav-item dropdown">
         <b><a class="a nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           About
-        </a></b>
+        </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="a dropdown-item" href="/william">William</a>
@@ -64,16 +66,16 @@
           <a class="a dropdown-item" href="/jason">Jason</a>
           <a class="a dropdown-item" href="/dov">Dov</a>
           <a class="a dropdown-item" href="/zone">Zone</a>
-        </div>
+        </div></b>
       </li>
 
       <% if (loggedIn) { %>
       <li class="nav-item">
-        <b><a class="a nav-link active" href="/logout"> Logout</a></b>
+        <b><a class="a nav-link" href="/logout"> Logout</a></b>
       </li>
       <% } else { %>
         <li class="nav-item">
-          <b><a class="a nav-link active" href="/auth/google"> Login</a></b>
+          <b><a class="a nav-link" href="/auth/google"> Login</a></b>
         </li>
         <% }  %>
 
@@ -83,7 +85,7 @@
 
     <form class="form-inline my-2 my-lg-0" method="post" action="/findBook">
       <input name = "item" class="form-control mr-sm-2" type="search" placeholder="Search your textbook!" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 
   </div>

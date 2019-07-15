@@ -13,7 +13,7 @@
                 <td><%= authors(books[i]) %> ...
                </td>
                <td>
-                <img src="<%= books[i].volumeInfo.imageLinks.thumbnail %> ">
+                <img src="<%= thumbnail(books[i]) %> ">
                 <form method="post" action="/processBook">
                   <input type="hidden" id="title" name="title" value="<%= books[i].volumeInfo.title %>">
                   <input type="submit" value="Make or view Notes">

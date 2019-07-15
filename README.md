@@ -1,4 +1,4 @@
-![alt text](/public/images/LegUp.png "This is our LOGO!")
+![alt text](/public/images/smallerLegUp.png "This is our LOGO!")
 LegUp: Notes from Everywhere
 ====================
 Are you struggling in class? Do you need to raise your grades? Try LegUp! You can always find what you want here.

@@ -34,7 +34,7 @@ Are you struggling in class? Do you need to raise your grades? Try BootLeg! You 
 >
 > Both text and voice channels are available. They are categorized into specific subjects, and we also have a "general" channel that you can talk about anything here.
 >
-> ### To enter Discord, just click the "Discord" button on the top of the page.
+> ### To enter Discord, just click the "Discord" button on the top of the page, or you can just [click here](https://discordapp.com/invite/gRgSceG "Discord").
 
 
 ## How many textbooks are available in BootLeg?

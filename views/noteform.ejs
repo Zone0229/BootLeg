@@ -1,7 +1,6 @@
-<%- include('bootheader') -%>
-<%- include('menubar') -%>
+
     <div class="jumbotron">
-        <h1>Make a Note </h1>
+        <h1>Make a Note, and make it good! </h1>
         <p>Add a note to your desired book</p>
     </div>
 
@@ -9,17 +8,10 @@
     <form method="post" action="/processnote">
         Note Title: <input type="text" id="header" name="header" value="Your Title"> <br>
         <br><br>Your Note: <br><textarea id="text" name="text" value="What are your notes?"></textarea>
-        <br><br><br>Textbook: <input type="text" id="textbook" name="textbook" value=><br>
-        <br><br>Pages: <input type="number" id="page2" name="page1" value=1> - <input type="number" id="page" name="page2" value=1>
-        <%//textbook: <input type="text" id="textbook" name="textbook" value=;>%>
-        <p>
-        <script>
-          var data = localStorage.getItem("textbook");
-          document.getElementById("textbook").value = data;
-        </script>
-        </p>
-      <input type="submit">
+        <br><br><br>Textbook: <input type="text"  id="textbook" name="textbook" value="<%= book.title %>">
+        <br><br>Pages: <input type="number" id="page1" name="page1" value=1> -
+        <input type="number" id="page2" name="page2" value=1>
+        <input type="text"  name="bookid" value="<%= book._id %>">
+        <input type="submit">
+
     </form>
-
-
-<%- include('bootfooter') -%>

@@ -19,13 +19,17 @@ exports.saveNote = ( req, res ) => {
      textbook: req.body.textbook,
      page1: req.body.page1,
      page2: req.body.page2,
+     bookid: req.body.bookid
    }
  )
+
+ console.dir(req.body)
 
   //console.log("skill = "+newSkill)
   newNote.save()
     .then( () => {
-      res.redirect( '/showNotes' );
+      console.log('bookid = '+req.body.bookid)
+      res.redirect( '/showBook/'+req.body.bookid);
     } )
     .catch( error => {
       res.send( error );

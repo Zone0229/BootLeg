@@ -6,18 +6,21 @@
     </div>
     <table class="table-bordered table-striped">
         <% for(i = 0; i<books.length; i++){  %>
-            <form method="post" action="/processBook"> <tr>
+            <tr>
                 <td>
-                  <%= books[i].volumeInfo.title %> <input type="hidden" id="title" name="title" value="<%= books[i].volumeInfo.title %>">
+                  <%= books[i].volumeInfo.title %>
                 </td>
                 <td><%= authors(books[i]) %> ...
                </td>
                <td>
                 <img src="<%= books[i].volumeInfo.imageLinks.thumbnail %> ">
+                <form method="post" action="/processBook">
+                  <input type="hidden" id="title" name="title" value="<%= books[i].volumeInfo.title %>">
                   <input type="submit" value="Make or view Notes">
+                </form>
                </td>
                </tr>
-              </form>
+
         <% } %>
     </table>
     s

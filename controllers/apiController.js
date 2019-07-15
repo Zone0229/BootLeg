@@ -2,6 +2,7 @@
 const axios = require('axios');
 const util = require('util')
 const Book = require( '../models/Book' );
+const Note = require( '../models/Note' );
 //var apikey = require('../config/apikey');
 //console.dir(apikey)
 
@@ -52,10 +53,15 @@ exports.ShowOneBook = ( req, res ) => {
   Book.findOne({_id:id})
     .exec()
     .then( ( book ) => {
+      Note.find({textbook:book.title})
+      .then((notes) => {
+        console.log("got notes")
+        console.log(notes)
       res.render( 'book', {
-        book:book, title:"Book"
-      } );
+        book:book, notes:notes, title:"Book"
+      } )
     } )
+  } )
     .catch( ( error ) => {
       console.log( error.message );
       return [];
@@ -66,18 +72,16 @@ exports.ShowOneBook = ( req, res ) => {
 };
 
 exports.saveBook = ( req, res ) => {
-  //console.log("in saveSkill!")
-  //console.dir(req)
   let newBook = new Book(
    {
      title: req.body.title,
    }
  )
 
-  //console.log("skill = "+newSkill)
   newBook.save()
     .then( () => {
-      res.redirect( '/showBook' );
+      var bookid = newBook._id;
+      res.redirect( '/showBook/'+bookid );
     } )
     .catch( error => {
       res.send( error );

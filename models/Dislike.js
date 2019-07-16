@@ -5,7 +5,7 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 
 var dislikeSchema = Schema( {
   dislike: String,
-  user: String,
+  user: ObjectId,
   noteid: ObjectId,
 } );
 

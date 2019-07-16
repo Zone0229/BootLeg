@@ -4,10 +4,12 @@
         <input type="submit" value="Like">
         <input type="hidden"  name="noteid" value="<%= notes[i]._id %>">
         <input type="hidden"  name="bookid" value="<%= notes[i].bookid %>">
+        <%= notes[i].likes.length %>
     </form>
     <form method="post" action="/processdisLike">
         <input type="hidden"  name="noteid" value="<%= notes[i]._id %>">
         <input type="hidden"  name="bookid" value="<%= notes[i].bookid %>">
         <input type="hidden"  name="dislike" value="dislike">
         <input type="submit" value="Dislike">
+        <%= notes[i].dislikes.length %>
     </form>

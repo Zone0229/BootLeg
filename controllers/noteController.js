@@ -2,10 +2,10 @@
 const Note = require( '../models/Note' );
 const axios = require('axios');
 const util = require('util')
+const Like = require('../models/Like')
+const disLike = require('../models/Dislike')
 //var apikey = require('../config/apikey');
 //console.dir(apikey)
-axios.defaults.headers.post['X-API-KEY'] = 'YOUR_REST_KEY' // for POST requests
-const api_key = "9097a0c7f9cd2d30eef1b6b4b50b6127"
 
 exports.saveNote = ( req, res ) => {
   //console.log("in saveSkill!")
@@ -19,7 +19,8 @@ exports.saveNote = ( req, res ) => {
      textbook: req.body.textbook,
      page1: req.body.page1,
      page2: req.body.page2,
-     bookid: req.body.bookid
+     bookid: req.body.bookid,
+     likes: Like.count - disLike.count,
    }
  )
 
@@ -48,7 +49,7 @@ exports.getAllNotes = ( req, res ) => {
       console.log("in gatAllNotes")
       console.dir(notes)
       res.render( 'notes', {
-        notes:notes, title:"Notes"
+        notes:notes, title:"Notes", likes:likes
       } );
     } )
     .catch( ( error ) => {

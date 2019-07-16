@@ -393,7 +393,6 @@ app.post('/processdisLike', likecontroller.savedisLike)
 
 
 app.get('/showComments', commentController.getAllComments)
-app.get('/showNotes', noteController.getAllNotes)
 // app.use('/', indexRouter);  // this is how we use a router to handle the / path
 // but here we are more direct
 

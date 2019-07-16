@@ -21,7 +21,7 @@ exports.saveNote = ( req, res ) => {
      page1: req.body.page1,
      page2: req.body.page2,
      bookid: req.body.bookid,
-     
+
    }
  )
 
@@ -31,7 +31,6 @@ exports.saveNote = ( req, res ) => {
   newNote.save()
     .then( () => {
       console.log('bookid = '+req.body.bookid)
-      console.log('likes = '+req.body.likes)
       res.redirect( '/showBook/'+req.body.bookid);
     } )
     .catch( error => {
@@ -67,7 +66,10 @@ exports.getAllNotes = ( req, res ) => {
 exports.getOneNote = ( req, res ) => {
   //gconsle.log('in getAllSkills')
   const id = req.params.id
-  console.log('the id is '+id)
+  
+  Like.find().exec(function (err, results) {
+  var count = results.length})
+  console.log('likes = ');
   Note.findOne({_id:id})
     .exec()
     .then( ( note ) => {

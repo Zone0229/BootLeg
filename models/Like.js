@@ -5,8 +5,8 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 
 var likeSchema = Schema( {
   like: String,
-  user: String,
-  noteid: String,
+  user: ObjectId,
+  noteid: ObjectId,
 } );
 
 module.exports = mongoose.model( 'Like', likeSchema );

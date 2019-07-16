@@ -1,9 +1,10 @@
 'use strict';
 const Note = require( '../models/Note' );
 const axios = require('axios');
-const util = require('util')
-const Like = require('../models/Like')
-const disLike = require('../models/Dislike')
+const util = require('util');
+const Like = require('../models/Like');
+const Dislike = require('../models/Dislike');
+
 //var apikey = require('../config/apikey');
 //console.dir(apikey)
 
@@ -20,7 +21,7 @@ exports.saveNote = ( req, res ) => {
      page1: req.body.page1,
      page2: req.body.page2,
      bookid: req.body.bookid,
-     likes: Like.count - Dislike.count,
+     
    }
  )
 

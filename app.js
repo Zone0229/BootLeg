@@ -353,7 +353,7 @@ app.get("/languageTextbooks/latin", (req, res) => {
 });
 
 app.get("/languageTextbooks/mandarin", (req, res) => {
-  res.render('languageTextBooks/mandarin',{title:"language"});
+  res.render('languageTextbooks/mandarin',{title:"language"});
 });
 
 const axios = require("axios")

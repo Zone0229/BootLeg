@@ -1,0 +1,18 @@
+<%- include('../bootheader') -%>
+<%- include('../menubar') -%>
+    <div class="jumbotron">
+        <h1>Algebra II</h1>
+        <p>Select your Algebra II textbook.</p>
+        <a href="/englishTextBooks/generalNotesAlgebra2" class="btn btn-primary">Non Textbook Notes</a>
+    </div>
+
+    <script>let textbook = []</script>
+    <script>localStorage.setItem("textbook","Algebra 2")</script>
+
+
+    <a href="/images/math/algebra2Textbook/algebra2-1.jpg"><img src="/images/math/algebra2Textbook/algebra2-1.jpg" style="width: 200px"></a>
+
+
+
+<%- include("../notescore") -%>
+<%- include('../bootfooter') -%>

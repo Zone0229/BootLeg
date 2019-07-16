@@ -247,8 +247,8 @@ app.get('/Language', (req, res) => {
   res.render('Language',{title:"Language"});
 });
 
-app.get('/Math', (req, res) => {
-  res.render('Math',{title:"Math"});
+app.get('/math', (req, res) => {
+  res.render('math',{title:"math"});
 });
 
 app.get("/mathTextBooks/algebra", (req, res) => {
@@ -340,20 +340,20 @@ app.get("/scienceTextBooks/physics", (req, res) => {
   res.render('scienceTextBooks/physics',{title:"science"});
 });
 
-app.get("/languageTextBooks/french", (req, res) => {
-  res.render('languageTextBooks/french',{title:"language"});
+app.get("/languageTextbooks/french", (req, res) => {
+  res.render('languageTextbooks/french',{title:"language"});
 });
 
-app.get("/languageTextBooks/spanish", (req, res) => {
-  res.render('languageTextBooks/spanish',{title:"language"});
+app.get("/languageTextbooks/spanish", (req, res) => {
+  res.render('languageTextbooks/spanish',{title:"language"});
 });
 
-app.get("/languageTextBooks/latin", (req, res) => {
-  res.render('languageTextBooks/latin',{title:"language"});
+app.get("/languageTextbooks/latin", (req, res) => {
+  res.render('languageTextbooks/latin',{title:"language"});
 });
 
-app.get("/languageTextBooks/mandarin", (req, res) => {
-  res.render('languageTextBooks/mandarin',{title:"language"});
+app.get("/languageTextbooks/mandarin", (req, res) => {
+  res.render('languageTextbooks/mandarin',{title:"language"});
 });
 
 const axios = require("axios")

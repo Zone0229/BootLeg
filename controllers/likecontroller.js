@@ -27,6 +27,7 @@ exports.saveLike = ( req, res ) => {
    newLike.save()
      .then( () => {
        console.log('noteid = '+req.body.noteid)
+       res.redirect( '/showBook/'+req.body.bookid);
      } )
      .catch( error => {
        res.send( error );
@@ -51,6 +52,7 @@ exports.saveLike = ( req, res ) => {
     newLike.save()
       .then( () => {
         console.log('noteid = '+req.body.noteid)
+        res.redirect( '/showBook/'+req.body.bookid);
       } )
       .catch( error => {
         res.send( error );

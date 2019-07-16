@@ -247,8 +247,8 @@ app.get('/Language', (req, res) => {
   res.render('Language',{title:"Language"});
 });
 
-app.get('/Math', (req, res) => {
-  res.render('Math',{title:"Math"});
+app.get('/math', (req, res) => {
+  res.render('math',{title:"math"});
 });
 
 app.get("/mathTextBooks/algebra", (req, res) => {

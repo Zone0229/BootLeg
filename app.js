@@ -45,6 +45,7 @@ const profileController = require('./controllers/profileController')
 const forumPostController = require('./controllers/forumPostController')
 const noteController = require('./controllers/noteController')
 const historyController = require('./controllers/historyController')
+const likecontroller = require('./controllers/likecontroller')
 
 
 const isbnController = require('./controllers/isbnController')
@@ -385,6 +386,8 @@ app.post('/findISBN', isbnController.findISBN)
 app.post('/findBook', apiController.findBook)
 app.get('/showBook/:id', apiController.ShowOneBook)
 app.post('/processBook', apiController.saveBook)
+app.post('/processLike', likecontroller.saveLike)
+app.post('/processdisLike', likecontroller.savedisLike)
 
 
 

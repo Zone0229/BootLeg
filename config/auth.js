@@ -9,8 +9,9 @@ module.exports = {
         'clientID': '160728964276-1v9ollpoopall2ji499bv78omfcjper9.apps.googleusercontent.com',
         'clientSecret'  : 'hVOqEyZ6JtY51MAg1e6Lo0MM',
         */
-				'callbackURL'   : 'http://127.0.0.1:5500/login/authorized'
-	
+				//'callbackURL'   : 'http://127.0.0.1:5500/login/authorized'
+        'callbackURL'   : 'https://hidden-hamlet-93952.herokuapp.com/login/authorized'
+
     }
 
 };

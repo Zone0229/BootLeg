@@ -12,6 +12,7 @@ var noteSchema = Schema( {
   page2: Number,
   bookid: ObjectId,
   likes: [ObjectId],
+  dislikes: [ObjectId],
 
 } );
 

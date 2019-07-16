@@ -42,6 +42,7 @@ exports.saveLike = ( req, res ) => {
       user: req.body.googlename,
       dislike: req.body.dislike,
       noteid: req.body.noteid,
+      bookid: req.body.bookid
     }
   )
 
@@ -52,6 +53,7 @@ exports.saveLike = ( req, res ) => {
     newLike.save()
       .then( () => {
         console.log('noteid = '+req.body.noteid)
+        console.log('likes = '+ Like.count)
         res.redirect( '/showBook/'+req.body.bookid);
       } )
       .catch( error => {

@@ -20,7 +20,7 @@ exports.saveNote = ( req, res ) => {
      page1: req.body.page1,
      page2: req.body.page2,
      bookid: req.body.bookid,
-     likes: Like.count - disLike.count,
+     likes: Like.count - Dislike.count,
    }
  )
 
@@ -30,6 +30,7 @@ exports.saveNote = ( req, res ) => {
   newNote.save()
     .then( () => {
       console.log('bookid = '+req.body.bookid)
+      console.log('likes = '+req.body.likes)
       res.redirect( '/showBook/'+req.body.bookid);
     } )
     .catch( error => {

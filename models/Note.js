@@ -7,11 +7,11 @@ var noteSchema = Schema( {
   header: String,
   text: String,
   postdate: Date,
-  //commentcount: Number,
   textbook: String,
   page1: Number,
   page2: Number,
-  bookid: ObjectId
+  bookid: ObjectId,
+  likes: Number
 
 } );
 

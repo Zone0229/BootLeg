@@ -4,7 +4,15 @@
     <div class="jumbotron">
         <h1>Books</h1>
     </div>
-    <table class="table-bordered table-striped">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Book Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Cover</th>
+        </tr>
+      </thead>
+      <tbody>
         <% for(i = 0; i<books.length; i++){  %>
             <tr>
                 <td>
@@ -22,6 +30,7 @@
                </tr>
 
         <% } %>
+        </tbody>
     </table>
     s
 <%- include('bootfooter') -%>
